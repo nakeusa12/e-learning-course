@@ -1,7 +1,8 @@
 export const courses = [
 	{
 		title: 'The Alchemy of Automation',
-		img: require('../images/study.jpg'),
+		img:
+			'https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=743&q=80',
 		author: 'Doug Funny',
 		price: 3900,
 		saleOptIn: true,
@@ -25,8 +26,9 @@ export const courses = [
 		],
 	},
 	{
-		title: 'Small Business Accelerator',
-		img: require('../images/study.jpg'),
+		title: 'Microservices with Node JS and React',
+		img:
+			'https://images.unsplash.com/photo-1561883088-039e53143d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
 		author: 'Corey Matthews',
 		price: 2300,
 		sale: 90,
@@ -34,8 +36,9 @@ export const courses = [
 		id: 1,
 	},
 	{
-		title: 'The Digital Nomads Guide To The Galaxy',
-		img: require('../images/study.jpg'),
+		title: 'React Native - The Practical Guide [2020 Edition]',
+		img:
+			'https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=876&q=80',
 		author: 'Aubrey Plaza',
 		price: 2900,
 		saleOptIn: true,
@@ -43,13 +46,42 @@ export const courses = [
 		id: 2,
 	},
 	{
-		title: 'The Employees Guide To Firing Your Boss',
+		title: 'NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)',
 		img: require('../images/study.jpg'),
-		author: 'Adam Demamp',
+		author: 'Manca Demamp',
 		saleOptIn: true,
-		price: 1200,
+		price: 1500,
 		position: 3,
 		id: 3,
+	},
+	{
+		title: 'Unity Game Development: Create 2D And 3D Games With C#',
+		img:
+			'https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+		author: 'Alex Damp',
+		price: 1900,
+		position: 4,
+		id: 4,
+	},
+	{
+		title: 'The Employees Guide To Firing Your Boss',
+		img:
+			'https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+		author: 'Wish Hope',
+		saleOptIn: true,
+		price: 1200,
+		position: 5,
+		id: 5,
+	},
+	{
+		title: '2020 Complete Public Speaking Masterclass For Every Occasion',
+		img:
+			'https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+		author: 'Adam Demamp',
+		saleOptIn: true,
+		price: 200,
+		position: 6,
+		id: 6,
 	},
 ];
 
