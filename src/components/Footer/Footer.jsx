@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.scss';
+import Kusamy from '../../images/kusamy.png';
 
 const Footer = () => {
 	return (
@@ -21,7 +22,7 @@ const Footer = () => {
 				</Link>
 			</div>
 			<div className='lowest'>
-				<h2 className='logo-footer'>Logo</h2>
+				<img src={Kusamy} alt='logo' className='logo-footer' />
 				<div className='copyright'>&copy; Nakeusa 2020</div>
 			</div>
 		</div>
