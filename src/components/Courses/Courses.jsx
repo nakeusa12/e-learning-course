@@ -65,13 +65,12 @@ const Courses = () => {
 				) : (
 					<div className='price'>{el.price}</div>
 				)}
-
-				{el.position === 9999999999999 ? (
-					<div />
-				) : (
-					<input type='submit' value='add to cart' className='button' />
-				)}
 			</div>
+			{el.position === 9999999999999 ? (
+				<div />
+			) : (
+				<input type='submit' value='add to cart' className='button' />
+			)}
 		</div>
 	));
 
