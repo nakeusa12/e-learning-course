@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
+import Kusamy from '../../images/kusamy.png';
 
 const HeaderLeft = (props) => {
 	const navHome = () => {
@@ -7,10 +8,14 @@ const HeaderLeft = (props) => {
 	};
 	return (
 		<div className='header__left'>
-			{/* <Link to="/">
-				<img src="logo" alt="Logo" className="header__left--img" />
-			</Link> */}
-			<h1 onClick={() => navHome()}>LOGO</h1>
+			<Link to='/'>
+				<img
+					src={Kusamy}
+					alt='Logo'
+					className='header__left--img'
+					onClick={() => navHome()}
+				/>
+			</Link>
 		</div>
 	);
 };
