@@ -1,0 +1,64 @@
+@import '../variables';
+
+.header {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 7rem;
+	box-shadow: 0 0.3rem 0.6rem rgba($black, 0.15);
+
+	&__left {
+		width: 30%;
+
+		&--img {
+			display: flex;
+			width: 90%;
+			align-items: center;
+			cursor: pointer;
+		}
+	}
+
+	&__center {
+		width: 40%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__right {
+		width: 30%;
+		display: flex;
+		padding-right: 4rem;
+		justify-content: flex-end;
+
+		&--cart {
+			display: flex;
+			height: 3rem;
+			width: 3rem;
+			cursor: pointer;
+			align-self: center;
+			margin-right: 1.6rem;
+		}
+
+		&--login {
+			height: 4rem;
+			width: 10rem;
+			border-radius: 4px;
+			background-color: $blue-light;
+			color: $grey-light;
+			outline: none;
+			border: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+			--webkit-appearance: none;
+			transition: all 0.2s;
+
+			&:hover {
+				background-color: $grey-light;
+				color: $blue-light;
+				border: 2px solid $blue-light;
+			}
+		}
+	}
+}

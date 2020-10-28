@@ -1,0 +1,40 @@
+// Color
+
+$white: #fff;
+$black: #000;
+$transparent: #ffffff00;
+$grey-light: #f7f7f7;
+$slate-dark: #29303b;
+$blue-light: #3b82f5;
+$pink-dark: #e4007d;
+
+// Media Query Break Points
+
+$screen-tn-max: 450px;
+$screen-sm-max: 596px;
+$screen-md-max: 768px;
+$screen-lg-max: 992px;
+
+// Mixins
+
+@mixin tn {
+	@media (max-width: #{$screen-tn-max}) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media (max-width: #{$screen-sm-max}) {
+		@content;
+	}
+}
+@mixin md {
+	@media (max-width: #{$screen-md-max}) {
+		@content;
+	}
+}
+@mixin lg {
+	@media (max-width: #{$screen-lg-max}) {
+		@content;
+	}
+}

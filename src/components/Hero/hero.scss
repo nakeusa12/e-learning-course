@@ -1,0 +1,90 @@
+@import '../variables';
+
+.cta-top {
+	position: relative;
+	display: flex;
+	margin-top: 4rem;
+	justify-content: center;
+	align-items: center;
+
+	&_img {
+		display: flex;
+		padding: 3rem;
+		width: 85%;
+		height: 34rem;
+		background-image: linear-gradient(
+				to left,
+				$transparent 15%,
+				$slate-dark 40%
+			),
+			url('../../images/work.jpg');
+		background-size: cover;
+		background-position: center;
+
+		@include md {
+			width: 100%;
+			background-image: linear-gradient(
+					to left,
+					$transparent 15%,
+					$slate-dark 30%
+				),
+				url('../../images/work.jpg');
+		}
+
+		@include sm {
+			background-image: url('../../images/work.jpg');
+		}
+	}
+
+	&_textbox {
+		position: absolute;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		width: 45%;
+		left: 10%;
+		height: 30rem;
+		color: $grey-light;
+		align-items: center;
+
+		@include md {
+			height: 34rem;
+			width: 60%;
+			left: 3rem;
+		}
+
+		@include sm {
+			width: 100%;
+			left: 0;
+			padding: 2rem;
+			background-color: rgba($slate-dark, 0.9);
+		}
+	}
+
+	&_headline {
+		font-size: 3.5rem;
+	}
+
+	&_story {
+		font-size: 1.6rem;
+	}
+
+	&_button {
+		height: 3.7rem;
+		width: 35rem;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: $grey-light;
+		border: none;
+		background-color: $blue-light;
+		border-radius: 4px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			color: $blue-light;
+			background-color: $grey-light;
+		}
+	}
+}

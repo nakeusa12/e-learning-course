@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 58%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+}
+
+@media screen and (max-width: 596px) {
+	html {
+		font-size: 53%;
+	}
+}
+
+.page-container {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 23rem);
+}

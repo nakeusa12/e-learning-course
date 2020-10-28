@@ -1,0 +1,55 @@
+@import '../variables';
+
+.footer {
+	position: relative;
+	width: 100vw;
+	height: 16rem;
+	overflow: hidden;
+	background-color: $white;
+	z-index: 999;
+
+	.page-break {
+		border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+		width: 100vw;
+	}
+
+	.top {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+		.link {
+			font-size: 1.8rem;
+			font-weight: 800;
+			text-decoration: none;
+			color: $blue-light;
+			margin: 2rem 2rem 0 2rem;
+			text-align: center;
+			cursor: pointer;
+
+			&:visited {
+				text-decoration: none;
+				color: $blue-light;
+			}
+			&:hover {
+				color: #00f;
+			}
+		}
+	}
+
+	.lowest {
+		display: flex;
+		width: 100vw;
+		justify-content: space-between;
+		align-items: center;
+		height: 10rem;
+
+		.logo {
+			width: 20%;
+		}
+		.copyright {
+			font-size: 1.4rem;
+			font-weight: 800;
+			margin-right: 4rem;
+		}
+	}
+}
