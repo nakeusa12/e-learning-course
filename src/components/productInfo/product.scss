@@ -4,8 +4,10 @@
 	position: relative;
 	display: flex;
 	width: 100%;
-	background-color: rgba(24, 24, 63, 0.9);
+	padding: 0 60px;
+	background-color: $slate-dark;
 	height: 36rem;
+	font-family: $poppins;
 
 	&__info {
 		display: flex;
@@ -40,7 +42,7 @@
 		right: 0;
 		margin: 3rem 3rem 2rem 2rem;
 		box-shadow: 0 0.7rem 1.2rem rgba($black, 0.2);
-		width: 36%;
+		width: 30%;
 		z-index: 100;
 		transition: all 0.5s;
 
@@ -97,13 +99,12 @@
 			}
 
 			&--addtocart {
-				height: 4rem;
-				width: 94%;
+				height: 5rem;
+				padding: 0 24px;
 				margin-left: 3%;
-				margin-right: 3%;
 				margin-top: 2rem;
 				border: none;
-				border-radius: 10rem;
+				border-radius: 4px;
 				color: $grey-light;
 				font-size: 2rem;
 				font-weight: 600;
@@ -124,10 +125,9 @@
 			&--points {
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
 				// height: 12rem;
 				font-size: 1.6rem;
-				margin: 3rem 3rem 2rem 3rem;
+				margin: 1rem 3rem 4rem 2rem;
 
 				&--medium {
 					display: flex;
@@ -154,7 +154,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 56%;
-	margin: 3rem;
+	margin: 3rem 0 0 8rem;
 	padding: 3rem;
 	background-color: $grey-light;
 	min-height: 20rem;

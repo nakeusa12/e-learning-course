@@ -44,9 +44,7 @@ const ProductFixed = () => {
 					/>
 				</div>
 				<div className='product-cta__buynow--bottom--points'>
-					<strong>
-						<u>course includes:</u>
-					</strong>
+					<strong>course includes :</strong>
 					<div className='product-cta__buynow--bottom--points--medium'>
 						<li>length: {length}</li>
 						<li>access: {accessType}</li>
